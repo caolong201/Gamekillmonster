@@ -14,11 +14,11 @@ public class ItemsManager : MonoBehaviour
 
     public void LoadItems()
     {
-        for (int i = 0; i < spawnCount; i++)
-        {
-            ItemHandler item =EffectManager.Instance.LoadObject<ItemHandler>(EEffectType.ItemCollect, GetRandomSpawnPosition(), Quaternion.identity, transform);
-            item.Init(player, distanceCollect);
-        }
+        // for (int i = 0; i < spawnCount; i++)
+        // {
+        //     ItemHandler item =EffectManager.Instance.LoadObject<ItemHandler>(EEffectType.ItemCollect, GetRandomSpawnPosition(), Quaternion.identity, transform);
+        //     item.Init(player, distanceCollect);
+        // }
     }
     
     Vector3 GetRandomSpawnPosition()
