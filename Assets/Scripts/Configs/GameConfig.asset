@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f853679b9c7c6419adfb20f4dde718, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: 
+  stages:
+  - stage: 1
+    TotalEnemiesSpaw: 10
+    winTimer: 1
+    enemies:
+    - type: 4
+      maxHealth: 1
+      attackPower: 2
+  - stage: 2
+    TotalEnemiesSpaw: 10
+    winTimer: 2
+    enemies:
+    - type: 0
+      maxHealth: 10
+      attackPower: 2
+    - type: 1
+      maxHealth: 15
+      attackPower: 3
+  - stage: 3
+    TotalEnemiesSpaw: 13
+    winTimer: 3
+    enemies:
+    - type: 0
+      maxHealth: 20
+      attackPower: 4
+    - type: 1
+      maxHealth: 15
+      attackPower: 3
+    - type: 2
+      maxHealth: 10
+      attackPower: 2
+  - stage: 4
+    TotalEnemiesSpaw: 20
+    winTimer: 3
+    enemies:
+    - type: 0
+      maxHealth: 20
+      attackPower: 4
+    - type: 1
+      maxHealth: 15
+      attackPower: 3
+    - type: 3
+      maxHealth: 50
+      attackPower: 6
