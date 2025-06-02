@@ -14,10 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stages:
   - stage: 1
-    TotalEnemiesSpaw: 10
+    TotalEnemiesSpaw: 5
     winTimer: 1
     enemies:
     - type: 4
+      maxHealth: 1
+      attackPower: 2
+    - type: 1
+      maxHealth: 1
+      attackPower: 2
+    - type: 2
       maxHealth: 1
       attackPower: 2
   - stage: 2

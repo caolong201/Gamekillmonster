@@ -188,11 +188,18 @@ public class Enemy : MonoBehaviour
 
     private void DropGem()
     {
-        for (int i = 0; i < EXP; i++)
+        // for (int i = 0; i < EXP; i++)
+        // {
+        //     ItemHandler item = EffectManager.Instance.LoadObject<ItemHandler>(EEffectType.ItemCollect,
+        //         GetRandomSpawnPosition(), Quaternion.identity);
+        //     item.Init(player, 2);
+        // }
+        
+        for (int i = 0; i < 1; i++)
         {
-            ItemHandler item = EffectManager.Instance.LoadObject<ItemHandler>(EEffectType.ItemCollect,
+            EffectManager.Instance.LoadObject<GameObject>(EEffectType.ItemCollect,
                 GetRandomSpawnPosition(), Quaternion.identity);
-            item.Init(player, 2);
+            //item.Init(player, 2);
         }
     }
 

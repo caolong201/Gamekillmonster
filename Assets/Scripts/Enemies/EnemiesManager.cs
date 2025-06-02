@@ -192,7 +192,7 @@ public class EnemiesManager : SingletonMono<EnemiesManager>
         {
             if (timerCheckSpawEnemies <= 0)
             {
-                timerCheckSpawEnemies = 10;
+                timerCheckSpawEnemies = 5;
                 SpawnEnemies();
             }
         }

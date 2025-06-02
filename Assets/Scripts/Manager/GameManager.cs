@@ -42,7 +42,9 @@ public class GameManager : SingletonMonoAwake<GameManager>
 
         ChangeStage(EGameStage.Live);
         IsTutorial = PlayerPrefs.GetInt("kTutorial", 1) == 1 ? true : false;
+        IsTutorial = false;
         CurrentStage = PlayerPrefs.GetInt("kCurrentStage", 1);
+        CurrentStage = 1;
         PlayerEXP = 0;
         wave = 0;
         conditionUnlockSkill = 10;
@@ -105,6 +107,7 @@ public class GameManager : SingletonMonoAwake<GameManager>
 
     public void IncreasePlayerEXP(int amount, bool isReset = false)
     {
+        return;
         if (isReset)
         {
             isBackpackShowing = false;
